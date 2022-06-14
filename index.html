@@ -15,7 +15,7 @@
             elements[i] = prompt("Enter the Strings to array:");
         }
          document.getElementById("full").value= elements;
-        document.getElementById("pop").value=(elements[0]);
+        document.getElementById("shift").value=(elements[0]);
          elements.shift();
         document.getElementById("array").value= elements;
         
@@ -32,6 +32,6 @@
     <input type="reset" value="  Reset  " style="background-color:red;color:snow;border-radius:7cm;border-color:red;width: 82px;"></form><br><br><br>
    Array before Shift Last Element: <input type="text" id="full" placeholder="Array before Shift the element" readonly><br><br><br>  
    Array after Shift Last Element: <input type="text" id="array" placeholder="Array after Shift the element" readonly><br><br><br>
-   Shifted Element  :&emsp;&emsp;&ensp;&emsp;&emsp;&ensp;<input type="text" id="pop" placeholder="Pop-ed Value" readonly><br><br>
+   Shifted Element  :&emsp;&emsp;&ensp;&emsp;&emsp;&ensp;<input type="text" id="shift" placeholder="Shifted Value" readonly><br><br>
 </body>
 </html>
