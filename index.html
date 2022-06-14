@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Array Elements</title>
+    <script>
+        function array()
+      {  var i;
+        var n = document.getElementById("n").value;
+        var elements= new Array(n);
+        for(i=0;i<n;i++)
+        {
+            elements[i] = prompt("Enter the Strings to array:");
+        }
+         document.getElementById("full").value= elements;
+        document.getElementById("pop").value=(elements[0]);
+         elements.shift();
+        document.getElementById("array").value= elements;
+        
+
+     }
+       
+    </script>
+</head>
+<body>
+<form>
+    <h1 style="color:red;">Shift Array Elements</h1>
+   <input type="text" id="n" placeholder="Enter  number of Elements"><br><br>
+   <input type="button" onclick="array()" value=" Submit " style="background-color:green;color:snow;border-radius:7cm;border-color:green;width:82px;">&emsp;&emsp;&emsp;
+    <input type="reset" value="  Reset  " style="background-color:red;color:snow;border-radius:7cm;border-color:red;width: 82px;"></form><br><br><br>
+   Array before Shift Last Element: <input type="text" id="full" placeholder="Array before Shift the element" readonly><br><br><br>  
+   Array after Shift Last Element: <input type="text" id="array" placeholder="Array after Shift the element" readonly><br><br><br>
+   Shifted Element  :&emsp;&emsp;&ensp;&emsp;&emsp;&ensp;<input type="text" id="pop" placeholder="Pop-ed Value" readonly><br><br>
+</body>
+</html>
